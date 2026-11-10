@@ -55,7 +55,7 @@ jobs:
         env:
           CI: "1"
         run: |
-          $suite = "${{ github.event.inputs.test_suite || 'test:ui' }}"
+          $suite = "${{ github.event.inputs.test_suite || 'test:web' }}"
           $browser = "${{ github.event.inputs.browser || 'chromium' }}"
           $mode = "${{ github.event.inputs.mode || 'headless' }}"
           $tag = $suite -replace 'test:', ''
