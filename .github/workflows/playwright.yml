@@ -12,9 +12,9 @@ on:
         type: choice
         options:
           - test:api
-          - test:ui
+          - test:web
           - test:all
-        default: test:ui
+        default: test:web
       browser:
         description: Browser to run tests on
         type: choice
