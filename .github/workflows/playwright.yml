@@ -61,10 +61,10 @@ jobs:
           $tag = $suite -replace 'test:', ''
 
           if ($mode -eq 'headed') {
-            npx playwright test --grep "@$tag" --project=$browser --headed --reporter=line
+            npx playwright test --grep "@$tag" --project=$browser --headed
           }
           else {
-            npx playwright test --grep "@$tag" --project=$browser --reporter=line
+            npx playwright test --grep "@$tag" --project=$browser 
           }
 
       - name: Upload test results
